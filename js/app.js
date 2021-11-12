@@ -38,3 +38,14 @@ let observer = new IntersectionObserver(function (entries, observer) {
 
 let targets = document.querySelectorAll('section');
 targets.forEach((target) => {observer.observe(target)});
+
+// Third Feature
+// Smooth Scrooling
+let nav = document.querySelector('nav');
+nav.addEventListener('click', function(evt) {
+    let id = evt.target.getAttribute('href');
+    if (id) {
+        evt.preventDefault();
+        document.querySelector(id).scrollIntoView({ behavior: 'smooth'});
+    }
+});
