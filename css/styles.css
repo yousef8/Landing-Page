@@ -57,6 +57,7 @@ nav ul li a {
 nav ul li:hover a {
     color: var(--surface);
 }
+/* End Navigation */
 /* Start Landing */
 .landing {
     text-align: center;
@@ -71,6 +72,7 @@ nav ul li:hover a {
     font-size: 100px;
     letter-spacing: 0.1em;
 }
+/* End Landing  */
 
 /* Start Sections */
 .section {
@@ -109,7 +111,12 @@ nav ul li:hover a {
         text-align: right;
     }
 }
+/* End Sections */
 
+.activ-sec {
+    border-color: var(--neon-color);
+    box-shadow: inset 0 0 0.5em var(--neon-color), 0 0 0.5em var(--neon-color);
+}
 /* Neon For Nav  */
 .neon {
     color: var(--neon-color);
