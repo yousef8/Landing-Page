@@ -24,9 +24,8 @@ header {
 
 /* End General Styling */
 
-/* Mobile First */
-
 /* start Navigation */
+/* Desktop First Approach have been applied here */
 nav {
     background-color: var(--surface);
     margin-bottom: 25px;
@@ -37,6 +36,33 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 5;
+}
+/* End Fixed NavBar */
+
+.bars {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .bars {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bars i {
+        background-color: var(--surface);
+        font-size: 5em;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hide-show-nav-bars {
+        display: block;
+    }
 }
 
 nav ul {
@@ -77,12 +103,13 @@ nav ul li:hover a {
 
 .landing h1 {
     margin: 0px;
-    font-size: 100px;
+    font-size: 60px;
     letter-spacing: 0.1em;
 }
 /* End Landing  */
 
 /* Start Sections */
+/* Mobile First Approach have been applied here */
 .section {
     margin: 25px;
     padding: 25px;
@@ -101,7 +128,6 @@ nav ul li:hover a {
     margin: 12px 0px;
 }
 
-/* Desktop second  */
 @media (min-width: 991px) {
     .section {
         width: 65%;

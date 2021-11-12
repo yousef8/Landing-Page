@@ -49,3 +49,11 @@ nav.addEventListener('click', function(evt) {
         document.querySelector(id).scrollIntoView({ behavior: 'smooth'});
     }
 });
+
+// Fourth Feature
+// Collapsable NavBar
+let hamburger = document.querySelector('.bars');
+hamburger.addEventListener('click', function() {
+    let i = document.querySelector('.nav-links');
+    i.classList.toggle('hide-show-nav-bars');
+});
